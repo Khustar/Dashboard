@@ -1,0 +1,153 @@
+<div class="nav-side-menu">
+        <div class="brand">Chatbot Nandi</div>
+      
+            <div class="menu-list">
+                
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li>
+                      <a href="#">
+                      <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                      </a>
+                    </li>
+    
+                    <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                      <a href="#"><mdb-icon fas icon="comments" class="mr-2"></mdb-icon> Handled Data </a>
+                    </li>
+                    
+           
+    
+                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                      <a (click)= "open_account()"> <mdb-icon far icon="credit-card" class="mr-2"></mdb-icon> Accounts </a>
+
+                      <div *ngIf="account">
+                      <ul class="ml-5">
+                            <li>                    <div>
+                                    <a (click) = 'hide_1()'>
+                                      Everyday Banking Account
+                                    </a>
+                                    </div>
+                                  
+                                    <div *ngIf="hideMe1" class="ml-3">
+                                      <li><a>Action</a></li>
+                                      <li><a>Action</a></li>
+                                      <li><a>Action</a></li>
+                                      <li><a>Action</a></li>                                  
+                                  </div></li>
+
+                                  <li>                    <div>
+                                        <a (click) = 'hide_2()'>
+                                          Youth & Student Accounts
+                                        </a>
+                                    </div>
+                                        <div *ngIf="hideMe2" class="ml-3">
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>  
+                                       
+                                      </div></li>
+                                <li>                    <div>
+                                        <a (click) = 'hide_3()'>
+                                          Lifestyle Benefits Accounts
+                                        </a>
+                                      </div>
+                                        <div *ngIf="hideMe3" class="ml-3">
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>  
+                                        
+                                      </div></li>
+                                <li>                    <div>
+                                        <a (click) = "hide_4()">
+                                          Seniors Accounts
+                                        </a>
+                                      </div>
+                                        <div *ngIf="hideMe4" class="ml-3">
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>  
+                                        
+                                      </div></li>
+                        </ul>
+                    </div>
+                    </li>  
+                    
+    
+                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                        
+                      <a  (click)= "open_loan()"> <mdb-icon fas icon="wallet" class="mr-2"></mdb-icon> Loans </a>
+
+                      <div *ngIf="loans">
+                      <ul class="ml-5">
+                            <li>  
+                                 <div>
+                                    <a (click) = 'hide_5()'>
+                                      Personal Loan
+                                    </a>
+                                    </div>
+                                  
+                                    <div *ngIf="hideMe5" class="ml-3">
+                                      <li><a>Action</a></li>
+                                      <li><a>Action</a></li>
+                                      <li><a>Action</a></li>
+                                      <li><a>Action</a></li>                                  
+                                  </div></li>
+
+
+                                  <li>                    <div>
+                                        <a (click) = 'hide_6()'>
+                                          Express Loan
+                                        </a>
+                                    </div>
+                                        <div *ngIf="hideMe6" class="ml-3">
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>  
+                                       
+                                      </div></li>
+                                <li>                    <div>
+                                        <a (click) = 'hide_7()'>
+                                          Instant Loan
+                                        </a>
+                                      </div>
+                                        <div *ngIf="hideMe7" class="ml-3">
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>  
+                                        
+                                      </div></li>
+                                <li>                    <div>
+                                        <a (click) = "hide_8()">
+                                          Overdraft Loan
+                                        </a>
+                                      </div>
+                                        <div *ngIf="hideMe8" class="ml-3">
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>
+                                                <li><a>Action</a></li>  
+                                        
+                                      </div></li>
+                      </ul>
+                    </div>
+                    </li>
+                    <!-- <ul class="sub-menu collapse" id="new">
+                      <li>New New 1</li>
+                      <li>New New 2</li>
+                      <li>New New 3</li>
+                    </ul> -->
+    
+    
+                     <li data-toggle="collapse" data-target="#detailsCollapse" class="collapsed">
+                      <a href="#">
+                            <mdb-icon fas icon="comment-slash" class="mr-2"></mdb-icon> Unhandled Data 
+                      </a>
+                      </li>
+                      
+                </ul>
+         </div>
+    </div>
